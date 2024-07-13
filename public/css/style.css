@@ -32,7 +32,20 @@ body {
 }
 
 
+/* Navbar */
+#top_nav {
+    background-color: var(--first-color);
+    padding: 5px;
+}
+#top_nav a {
+    color: var(--white-color);
+}
+#top_nav .btn {
+    background-color: var(--second-color);
+}
 
+
+/* Side social Media */
 #side_social_media_icon {
     position: fixed;
     top: 150px;
@@ -51,6 +64,7 @@ body {
     font-size: 22px;
 }
 
+/* Side Button */
 #side_button {
     position: fixed;
     bottom: 200px;
@@ -197,6 +211,12 @@ body {
 
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
+    .top_nav_text_menue {
+        display: none;
+    }
+    #side_button {
+        display: none;
+    }
     #contact_second_section h3 {
         font-size: 30px;
     }
