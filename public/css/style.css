@@ -51,7 +51,18 @@ body {
     font-size: 22px;
 }
 
-
+#side_button {
+    position: fixed;
+    bottom: 200px;
+    right: -140px;
+    transform: rotate(-90deg);
+    margin: 20px 0px;
+}
+#side_button .btn {
+    background-color: var(--second-color);
+    margin-left: 10px;
+    color: var(--white-color);
+}
 
 
 
@@ -63,6 +74,16 @@ body {
 
 
 /* Contact Us */
+#contact_bredcrumb {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../image/contactus.webp");
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contact_bredcrumb h1 {
+    color: var(--white-color);
+}
 #contact_first_section {
     margin-top: 30px;
     margin-bottom: 30px;
