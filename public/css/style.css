@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --first-color: #012f6b;
+    --second-color: #00a79d;
+}
+
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+a {
+    text-decoration: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+
+#side_social_media_icon {
+    position: fixed;
+    top: 150px;
+    z-index: 700;
+}
+#side_social_media_icon li {
+    padding: 8px;
+    background-color: var(--first-color);
+    margin: 5px 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 0 5px var(--second-color);
+}
+#side_social_media_icon li a {
+    color: var(--white-color);
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Us */
+#contact_first_section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#contact_first_section h1 {
+    font-weight: 600;
+}
+#contact_first_section .question_paragraph {
+    color: var(--second-color);
+    font-weight: 500;
+    margin-top: 15px;
+    font-size: 18px;
+}
+#contact_first_section .btn {
+    border: 2px solid var(--second-color);
+    padding: 10px 30px;
+    font-weight: 600;
+}
+#contact_first_section .btn:hover {
+    background-color: var(--first-color);
+    color: var(--white-color);
+    box-shadow: 0 0 30px var(--second-color);
+}
+#contact_second_section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#contact_second_section h3 {
+    font-weight: 600;
+    font-size: 35px;
+}
+#contact_second_section ul li i {
+    font-size: 20px;
+    color: var(--first-color);
+}
+#contact_form_section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#contact_form_section h3 {
+    font-weight: 600;
+    color: var(--first-color);
+}
+#contact_form_section button {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+#contact_form_section button:hover {
+    box-shadow: 0 0 30px var(--second-color);
+}
+
+
+
+/* Footer */
+#footer {
+    background-color: var(--first-color);
+    padding: 30px 0;
+}
+#footer h2 {
+    color: var(--white-color);
+    font-size: 40px;
+}
+#footer hr {
+    color: var(--white-color) !important;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#footer img {
+    height: auto;
+    width: 150px;
+}
+#footer h4 {
+    font-size: 18px;
+    color: var(--white-color);
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+#footer #footer_about_us ul li a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+#footer #footer_quick_link ul li  {
+    margin: 10px 0;
+}
+#footer #footer_quick_link ul li a {
+    color: var(--white-color);
+}
+#footer #footer_countries ul li{
+    margin: 10px 0;
+}
+#footer #footer_countries ul li a{
+
+    color: var(--white-color);
+}
+#footer #footer_social_media ul li {
+    display: inline-block;
+    margin-right: 10px;
+    color: var(--white-color);
+    margin-bottom: 10px;
+}
+#footer #footer_social_media ul li a {
+    font-size: 20px;
+    color: var(--white-color);
+}
+#copyright {
+    padding: 10px 0;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #contact_second_section h3 {
+        font-size: 30px;
+    }
+    #contact_second_section #number_side {
+        margin-top: 25px;
+    }
+    #contact_second_section #contact_map {
+        margin-top: 25px;
+    }
+
+    #footer h2 {
+        font-size: 25px;
+        padding-bottom: 10px !important;
+    }
+    #footer h4 {
+        margin-top: 20px;
+    }
+    #footer #footer_phone_number {
+        margin-bottom: 20px;
+    }
+    #footer #footer_email {
+        margin-bottom: 20px;
+    }
+    #footer #footer_social_media {
+        margin-bottom: 20px;
+    }
+}
