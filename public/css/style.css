@@ -6,6 +6,7 @@
     --white-color: #ffffff;
     --first-color: #012f6b;
     --second-color: #00a79d;
+    --shadow-color: #d6d6d6;
 }
 
 
@@ -45,6 +46,12 @@ body {
 }
 
 /* Main Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: var(--white-color);
+    box-shadow: 0 0 5px var(--black-color);
+}
 .navbar-toggler:focus {
     box-shadow: none;
 }
@@ -139,12 +146,20 @@ body {
 #contact_bredcrumb h1 {
     color: var(--white-color);
 }
+#contact_first_section h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--second-color);
+}
 #contact_first_section {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-#contact_first_section h1 {
-    font-weight: 600;
+.contact_first_section ul li{
+    padding: 5px 0;
+}
+.contact_first_section ul li span {
+    color: var(--second-color);
 }
 #contact_first_section .question_paragraph {
     color: var(--second-color);
@@ -162,17 +177,17 @@ body {
     color: var(--white-color);
     box-shadow: 0 0 30px var(--second-color);
 }
-#contact_second_section {
-    margin-top: 30px;
-    margin-bottom: 30px;
+.contact_info_col {
+    border-right: 2px dashed var(--first-color);
 }
-#contact_second_section h3 {
+.contact_info h5 {
     font-weight: 600;
-    font-size: 35px;
 }
-#contact_second_section ul li i {
-    font-size: 20px;
-    color: var(--first-color);
+.contact_info ul li {
+    padding: 5px 0;
+}
+.contact_info ul li span {
+    color: var(--second-color);
 }
 #contact_form_section {
     margin-top: 30px;
@@ -189,7 +204,17 @@ body {
 #contact_form_section button:hover {
     box-shadow: 0 0 30px var(--second-color);
 }
-
+#contact_person img{
+    height: auto;
+    width: 100px !important;
+    border-radius: 10px;
+}
+#contact_person h5 {
+    color: var(--second-color);
+}
+#contact_person a i {
+    color: var(--second-color);
+}
 
 
 /* Footer */
@@ -274,14 +299,17 @@ body {
     #company_items li {
         padding: 10px 0 !important;
     }
-    #contact_second_section h3 {
+    #contact_first_section h2 {
         font-size: 30px;
     }
-    #contact_second_section #number_side {
-        margin-top: 25px;
+    .contact_info_col {
+        border-bottom: 2px dashed var(--first-color);
+        border-right: 0;
+        padding: 20px 10px;
     }
-    #contact_second_section #contact_map {
-        margin-top: 25px;
+    
+    .office_time{
+        margin-top: 20px;
     }
 
     #footer h2 {
