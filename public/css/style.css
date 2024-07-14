@@ -51,6 +51,7 @@ body {
     top: 0;
     background-color: var(--white-color);
     box-shadow: 0 0 5px var(--black-color);
+    z-index: 999;
 }
 .navbar-toggler:focus {
     box-shadow: none;
@@ -86,6 +87,9 @@ body {
 #destination_items img {
     height: auto;
     width: 35px;
+}
+#destination_item:hover #destination_items {
+    display: block !important;
 }
 .navbar #event_btn {
     background-color: var(--second-color);
