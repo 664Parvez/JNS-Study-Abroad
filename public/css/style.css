@@ -308,6 +308,9 @@ body {
         border-right: 0;
         padding: 20px 10px;
     }
+    #contact_person {
+        margin-top: 30px;
+    }
     
     .office_time{
         margin-top: 20px;
