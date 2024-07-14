@@ -44,6 +44,47 @@ body {
     background-color: var(--second-color);
 }
 
+/* Main Navbar */
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar_icons_item {
+    flex-direction: row;
+}
+.navbar img {
+    height: auto;
+    width: 250px;
+}
+#nav_icons {
+    display: none !important;
+}
+#nav_icons ul li {
+    display: inline-block;
+    padding-left: 20px;
+}
+#nav_icons ul li:last-child {
+    padding-left: 0;
+}
+#navbarTogglerDemo01 ul li {
+    display: block !important;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    width: auto;
+}
+#destination_items {
+    width: 250px;
+    height: 400px;
+    overflow: scroll;
+}
+#destination_items img {
+    height: auto;
+    width: 35px;
+}
+.navbar #event_btn {
+    background-color: var(--second-color);
+    color: var(--white-color);
+}
+
 
 /* Side social Media */
 #side_social_media_icon {
@@ -216,6 +257,22 @@ body {
     }
     #side_button {
         display: none;
+    }
+    #nav_icons {
+        display: block !important;
+    }
+    .offcanvas {
+        overflow: scroll;
+    }
+    #destination_items {
+        height: auto;
+        width: 100%;
+    }
+    #destination_items li {
+        padding: 10px 0 !important;
+    }
+    #company_items li {
+        padding: 10px 0 !important;
     }
     #contact_second_section h3 {
         font-size: 30px;
