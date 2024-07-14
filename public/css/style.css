@@ -119,6 +119,7 @@ body {
     right: -140px;
     transform: rotate(-90deg);
     margin: 20px 0px;
+    z-index: 999;
 }
 #side_button .btn {
     background-color: var(--second-color);
