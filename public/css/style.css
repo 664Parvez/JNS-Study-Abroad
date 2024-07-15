@@ -132,10 +132,69 @@ body {
 }
 
 
+/* About Us */
+#about_bredcrumb {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../image/about/bradcrump.webp");
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#about_bredcrumb h1 {
+    color: var(--white-color);
+}
+.about_first_section {
+    padding: 30px 0; 
+}
+.about_first_section p {
+    text-align: justify;
+}
+.about_first_section img {
+    height: auto;
+    width: 100%;
+}
+.about_second_section {
+    padding: 30px 0; 
+}
+.about_second_section p {
+    text-align: justify;
+}
+.about_second_section img {
+    height: auto;
+    width: 100%;
+}
+.about_third_section {
+    padding: 30px 0; 
+}
+.about_third_section p {
+    text-align: justify;
+}
+.about_third_section img {
+    height: auto;
+    width: 100%;
+}
+.about_forth_section {
+    padding: 30px 0; 
+}
+.about_forth_section p {
+    text-align: justify;
+}
+.about_forth_section img {
+    height: auto;
+    width: 100%;
+}
 
-
-
-
+/* CEO Message */
+#ceo_bredcrumb {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../image/ceo/bradcrump.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ceo_bredcrumb h1 {
+    color: var(--white-color);
+}
 
 
 
@@ -304,6 +363,11 @@ body {
     #company_items li {
         padding: 10px 0 !important;
     }
+
+    .about_forth_section .our_mission_text {
+        margin-top: 20px;
+    }
+
     #contact_first_section h2 {
         font-size: 30px;
     }
