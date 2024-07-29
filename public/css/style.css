@@ -195,8 +195,128 @@ body {
 #ceo_bredcrumb h1 {
     color: var(--white-color);
 }
+#ceo_main_section {
+    padding: 40px 0;
+}
+#ceo_main_section img {
+    width: 100%;
+}
 
 
+/* Chooose Us */
+#choose_bredcrumb {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../image/choose-us/bradcrumb.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#choose_bredcrumb h1 {
+    color: var(--white-color);
+}
+#choose_us_main_section {
+    padding: 40px 0;
+}
+#choose_us_main_section h2 {
+    font-weight: 600;
+    color: var(--second-color);
+}
+#choose_us_main_section ul li i {
+    color: var(--second-color);
+}
+#choose_us_main_section ul li {
+    margin: 10px 0;
+}
+#choose_us_main_section img {
+    width: 100%;
+}
+
+/* News Page */
+#news_bredcrumb {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../image/news/blogging-backdrop-with-laptop-msaf9d67o4r5dl74.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#news_bredcrumb h1 {
+    color: var(--white-color);
+}
+
+#news_section {
+    padding: 40px 0;
+}
+#news_section .card img {
+    width: 100%;
+}
+#news_section .card .btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+#news_section .card .btn:hover {
+    background-color: var(--second-color);
+}
+
+
+/* News Single Page */
+#new_single {
+    padding: 40px 0; 
+}
+#new_single h4 {
+    margin-bottom: 20px;
+}
+.side_more_news img {
+    width: 80px;
+    height: 80px;
+}
+.side_more_news h6 {
+    color: var(--second-color);
+}
+.side_more_news p {
+    color: var(--black-color);
+}
+.side_more_news .single_side_news {
+    margin-bottom: 30px;
+}
+#new_single .card-footer ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+#new_single .card-footer ul li a {
+    color: var(--first-color);
+    font-size: 20px;
+}
+
+/* Testimonials */
+#testimonial_bredcrumb {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../image/testimonial/bradcrumb.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#testimonial_bredcrumb h1 {
+    color: var(--white-color);
+}
+#testimonial_section {
+    padding: 40px 0;
+}
+#testimonial_section .card img {
+    width: 100%;
+}
+#testimonial_section .card-body a i {
+    font-size: 40px;
+    color: var(--first-color);
+}
+#testimonial_section .testimonial_student_img {
+    height: 120px !important;
+    width: 120px !important;
+    margin-top: -50px;
+    border-radius: 50%;
+    border: 3px solid var(--second-color);
+}
+
+/*  */
 
 
 /* Contact Us */
@@ -363,7 +483,9 @@ body {
     #company_items li {
         padding: 10px 0 !important;
     }
-
+    #ceo_main_section img {
+        margin-top: 20px;
+    }
     .about_forth_section .our_mission_text {
         margin-top: 20px;
     }
