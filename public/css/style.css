@@ -602,7 +602,9 @@ body {
 #appointment_section {
     padding: 40px 0;
 }
-
+#appointment_section label {
+    font-weight: 600;
+}
 #appointment_section .btn {
     background-color: var(--first-color);
     color: var(--white-color)
@@ -610,6 +612,38 @@ body {
 #appointment_section .btn:hover {
     box-shadow: 0 0 30px var(--second-color);
 }
+
+/* Alumni Registration */
+#alumni_registration_bredcrumb {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../image/application/bradcrumb.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#alumni_registration_bredcrumb h1 {
+    color: var(--white-color);
+}
+#alumni_registration h4 {
+    background-color: var(--second-color);
+    padding: 10px;
+    color: var(--white-color);
+    border-radius: 5px;
+}
+#alumni_registration {
+    padding: 40px 0;
+}
+#alumni_registration label {
+    font-weight: 600;
+}
+#alumni_registration .btn {
+    background-color: var(--first-color);
+    color: var(--white-color)
+}
+#alumni_registration .btn:hover {
+    box-shadow: 0 0 30px var(--second-color);
+}
+
 
 /* Footer */
 #footer {
@@ -720,6 +754,12 @@ body {
     }
     #appointment_section label {
         margin-top: 15px;
+    }
+    #alumni_registration label {
+        margin-top: 15px;
+    }
+    #alumni_registration #studied input {
+        margin-top: 10px;
     }
 
     #footer h2 {
