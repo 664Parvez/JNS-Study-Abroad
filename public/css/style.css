@@ -568,10 +568,10 @@ body {
 #application_form label {
     font-weight: 600;
 }
-#application_form .form-control:focus {
+.form-control:focus {
     box-shadow: none;
 }
-#application_form .form-select:focus {
+.form-select:focus {
     box-shadow: none;
 }
 #application_form .nav-pills .nav-link {
@@ -580,6 +580,35 @@ body {
 #application_form .nav-pills .nav-link.active {
     background-color: var(--second-color);
     color: var(--white-color);
+}
+
+/* Appointment */
+#appointment_bredcrumb {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../image/application/bradcrumb.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#appointment_bredcrumb h1 {
+    color: var(--white-color);
+}
+#appointment_section h4 {
+    background-color: var(--second-color);
+    padding: 10px;
+    color: var(--white-color);
+    border-radius: 5px;
+}
+#appointment_section {
+    padding: 40px 0;
+}
+
+#appointment_section .btn {
+    background-color: var(--first-color);
+    color: var(--white-color)
+}
+#appointment_section .btn:hover {
+    box-shadow: 0 0 30px var(--second-color);
 }
 
 /* Footer */
@@ -687,6 +716,9 @@ body {
         margin-top: 20px;
     }
     #application_form label {
+        margin-top: 15px;
+    }
+    #appointment_section label {
         margin-top: 15px;
     }
 
