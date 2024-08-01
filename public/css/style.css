@@ -7,6 +7,8 @@
     --first-color: #012f6b;
     --second-color: #00a79d;
     --shadow-color: #d6d6d6;
+    --offwhite-color: #FAF9F6;
+    --red-color: #ff1100;
 }
 
 
@@ -96,6 +98,138 @@ body {
     color: var(--white-color);
 }
 
+/* Home Two */
+#home_two {
+    padding: 40px 0;
+}
+#home_two h2 {
+    font-size: 40px;
+    color: var(--first-color);
+    font-weight: 600;
+}
+#home_two p {
+    font-size: 18px;
+}
+#home_two h3 {
+    font-size: 40px;
+    color: var(--second-color);
+}
+#home_two h3::after {
+    content: "";
+    height: 1px;
+    display: block;
+    width: 100px;
+    background: var(--second-color);
+    margin: auto;
+}
+
+#home_three {
+    padding: 40px 0;
+}
+#home_three h2 {
+    font-size: 35px;
+    color: var(--first-color);
+    font-weight: 600;
+}
+
+#home_four {
+    padding: 40px 0;
+}
+#home_four h2 {
+    font-size: 35px;
+    color: var(--first-color);
+    font-weight: 600;
+}
+
+#home_five {
+    padding: 40px 0;
+}
+#home_five h2 {
+    font-size: 35px;
+    color: var(--first-color);
+    font-weight: 600;
+}
+
+#home_six {
+    padding: 40px 0;
+}
+#home_six h2 {
+    font-size: 35px;
+    color: var(--first-color);
+    font-weight: 600;
+}
+#home_six .card h4 {
+    color: var(--first-color);
+    font-weight: 600;
+}
+#home_six .card .btn {
+    background-color: var(--second-color);
+    color: var(--white-color);
+}
+#home_six .card .btn:hover {
+    background-color: var(--first-color);
+}
+
+#home_seven {
+    padding: 40px 0;
+}
+#home_seven h2 {
+    font-size: 35px;
+    color: var(--first-color);
+    font-weight: 600;
+}
+
+#home_eight {
+    padding: 40px 0;
+    background-color: var(--offwhite-color);
+}
+#home_eight h2 {
+    font-size: 35px;
+    color: var(--first-color);
+    font-weight: 600;
+}
+#home_eight .btn {
+    background-color: var(--second-color);
+    color: var(--white-color);
+} 
+#home_eight .btn:hover {
+    background-color: var(--first-color);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #home_two h2 {
+        font-size: 35px;
+    }
+    #home_two p {
+        font-size: 16px;
+    }
+    #home_three h2 {
+        font-size: 25px;
+    }
+
+    #home_four h2 {
+        font-size: 25px;
+    }
+
+    #home_five h2 {
+        font-size: 25px;
+    }
+    
+    #home_six h2 {
+        font-size: 25px;
+    }
+    
+    #home_seven h2 {
+        font-size: 25px;
+    }
+    
+    #home_eight h2 {
+        font-size: 25px;
+    }
+    #home_eight .get_quote_form {
+        margin-top: 20px;
+    }
+}
 
 /* Side social Media */
 #side_social_media_icon {
@@ -400,6 +534,53 @@ body {
     color: var(--second-color);
 }
 
+/* Application */
+#application_bredcrumb {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../image/application/bradcrumb.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#application_bredcrumb h1 {
+    color: var(--white-color);
+}
+#application_form {
+    padding: 40px 0;
+}
+#application_form .required_text {
+    color: var(--red-color);
+    font-style: italic;
+}
+#application_form h4 {
+    background-color: var(--second-color);
+    padding: 10px;
+    color: var(--white-color);
+    border-radius: 5px;
+}
+#application_form .btn {
+    background-color: var(--first-color);
+    color: var(--white-color)
+}
+#application_form .btn:hover {
+    box-shadow: 0 0 30px var(--second-color);
+}
+#application_form label {
+    font-weight: 600;
+}
+#application_form .form-control:focus {
+    box-shadow: none;
+}
+#application_form .form-select:focus {
+    box-shadow: none;
+}
+#application_form .nav-pills .nav-link {
+    color: var(--first-color);
+}
+#application_form .nav-pills .nav-link.active {
+    background-color: var(--second-color);
+    color: var(--white-color);
+}
 
 /* Footer */
 #footer {
@@ -504,6 +685,9 @@ body {
     
     .office_time{
         margin-top: 20px;
+    }
+    #application_form label {
+        margin-top: 15px;
     }
 
     #footer h2 {

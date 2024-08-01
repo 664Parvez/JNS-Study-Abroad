@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>JNS Study Abroad</title>
+</head>
+<body>
+
+
+<!--  -->
+
+    <!-- Navbar -->
+    <div id="top_nav">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="mx-2 top_nav_text_menue">
+                <a href="./testimonial.html">Testimonials</a>
+            </div>
+            <div class="mx-2 top_nav_text_menue">
+                <a href="./news.html">News</a>
+            </div>
+            <div class="mx-2 top_nav_text_menue">
+                <a href="./team.html">Team</a>
+            </div>
+            <div class="mx-2">
+                <a class="btn btn-sm" href="./application.html">Apply Now</a>
+            </div>
+            <div class="mx-2">
+                <a class="btn btn-sm" href="./appointment.html">Book an Appointment</a>
+            </div>
+            <div class="mx-2 top_nav_text_menue">
+                <a class="btn btn-sm" href="./alumni-registration.html">Alumni Registration</a>
+            </div>
+        </div>
+     </div>
+
+     <!-- Main Navbar -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./public/image/website-logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-header">
+                    <img src="./public/image/website-logo.png" alt="">
+                    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <ul class="navbar-nav ms-lg-auto mx-4 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="destination_item" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        Study Destinations
+                        </a>
+                        <ul class="dropdown-menu" id="destination_items">
+                            <li>
+                                <a class="dropdown-item py-lg-3" href="#">
+                                    <div class="d-flex justify-content-between">
+                                        <span>
+                                            <img src="./public/image/australia.svg" alt="">
+                                        </span>
+                                        <span>Australia</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-lg-3" href="#">
+                                    <div class="d-flex justify-content-between">
+                                        <span>
+                                            <img src="./public/image/UK.svg" alt="">
+                                        </span>
+                                        <span>UK</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-lg-3" href="#">
+                                    <div class="d-flex justify-content-between">
+                                        <span>
+                                            <img src="./public/image/usa.png" alt="">
+                                        </span>
+                                        <span>USA</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-lg-3" href="#">
+                                    <div class="d-flex justify-content-between">
+                                        <span>
+                                            <img src="./public/image/canada.png" alt="">
+                                        </span>
+                                        <span>Canada</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-lg-3" href="#">
+                                    <div class="d-flex justify-content-between">
+                                        <span>
+                                            <img src="./public/image/france.png" alt="">
+                                        </span>
+                                        <span>France</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-lg-3" href="#">
+                                    <div class="d-flex justify-content-between">
+                                        <span>
+                                            <img src="./public/image/new-zealand.png" alt="">
+                                        </span>
+                                        <span>New Zealand</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-lg-3" href="#">
+                                    <div class="d-flex justify-content-between">
+                                        <span>
+                                            <img src="./public/image/malaysia.png" alt="">
+                                        </span>
+                                        <span>Malaysia</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="about_item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Company</a>
+                        <ul class="dropdown-menu" id="company_items">
+                            <li><a class="dropdown-item py-lg-3" href="./about.html">About Us</a></li>
+                            <li><a class="dropdown-item py-lg-3" href="./why-choose-us.html">Why Choose Us</a></li>
+                            <li><a class="dropdown-item py-lg-3" href="./message-from-chief-executive.html">Message from Cheif Executive</a></li>
+                            <li><a class="dropdown-item py-lg-3" href="./gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item py-lg-3" href="./alumni.html">Alumni</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./our-partners.html" class="nav-link">Partner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact-us.html" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./upcoming-event.html" class="btn" id="event_btn">Upcoming Event</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- side social media -->
+    <div id="side_social_media_icon">
+        <ul>
+            <li>
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- side social media -->
+
+    <!-- side button -->
+    <div id="side_button">
+        <div class="d-flex">
+            <div>
+                <a href="./application.html" class="btn">Apply Now</a>
+            </div>
+            <div>
+                <a href="./appointment.html" class="btn">Book an Appointment</a>
+            </div>
+        </div>
+    </div>
+    <!-- side button -->
+
+    <!-- Bredcrumb -->
+    <section id="application_bredcrumb">
+        <h1 class="text-center">Student Application</h1>
+    </section>
+    <!-- Bredcrumb -->
+    
+    <!--  -->
+    
+    
+<!-- Main Section -->
+
+<section id="application_form">
+        <div class="container">
+            <h5 class="required_text mb-5">(All fields are required)</h5>
+
+            <form action="">
+
+                <div class="my-4">
+                    <h4>Personal Information</h4>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="fName">First Name</label>
+                        <input type="text" id="fName" class="form-control form-control-lg" placeholder="First Name" name="">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="lName">Last Name</label>
+                        <input type="text" id="lName" class="form-control form-control-lg" placeholder="Last Name" name="">
+                    </div>
+                </div>
+                
+                <div class="row mt-lg-4">
+                    <div class="col-lg-4 col-md-4">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" class="form-control form-control-lg" name="">
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <label for="cName">Nationality</label>
+                        <input type="text" id="cName" class="form-control form-control-lg" placeholder="Country Name" name="">
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <label for="gender">Gender</label>
+                        <select name="" id="gender" class="form-select form-select-lg">
+                            <option value="" selected>Male</option>
+                            <option value="">Female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="pNumber">Passport Number</label>
+                        <input type="text" id="pNumber" class="form-control form-control-lg" placeholder="Passport Number" name="">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="pDate">Passport Validation Date</label>
+                        <input type="date" id="pDate" class="form-control form-control-lg" name="">
+                    </div>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="cNumber">Contact Number</label>
+                        <input type="tel" id="cNumber" class="form-control form-control-lg" placeholder="Contact Number" name="">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="wNumber">WhatsApp Number</label>
+                        <input type="tel" id="wNumber" class="form-control form-control-lg" placeholder="WhatsApp Number" name="">
+                    </div>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control form-control-lg" placeholder="Enter Your Email" name="">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="address">Mailing Address</label>
+                        <textarea name="" id="address" class="form-control form-control-lg" placeholder="Enter Your Address"></textarea>
+                    </div>
+                </div>
+
+                <div class="my-4">
+                    <h4>Emergency Contact Details ( Must be parents/Guardians):</h4>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-4 col-md-6">
+                        <label for="guardian_name">Full Name of the Parent/ Guardian:</label>
+                        <input type="text" id="guardian_name" class="form-control form-control-lg" placeholder="Parent/ Guardian Name:" name="">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <label for="reletion">Relationship:</label>
+                        <select name="" id="reletion" class="form-select form-select-lg">
+                            <option value="">Select Emergency Contact Person</option>
+                            <option value="">Father</option>
+                            <option value="">Mother</option>
+                            <option value="">Brother</option>
+                            <option value="">Sister</option>
+                            <option value="">Others</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <label for="pcNumber">Contact Number:</label>
+                        <input type="tel" id="pcNumber" class="form-control form-control-lg" placeholder="Contact Number" name="">
+                    </div>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-4 col-md-6">
+                        <label for="pwNumber">WhatsApp Number:</label>
+                        <input type="tel" id="pwNumber" class="form-control form-control-lg" placeholder="WhatsApp Number" name="">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <label for="pEmail">Email</label>
+                        <input type="email" id="pEmail" class="form-control form-control-lg" placeholder="Enter Parent Email" name="">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <label for="pAddress">Present Address</label>
+                        <input type="text" id="pAddress" class="form-control form-control-lg" placeholder="Present Address" name="">
+                    </div>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-4 col-md-6">
+                        <label for="pAddress1">Address Line 1</label>
+                        <input type="text" id="pAddress1" class="form-control form-control-lg" placeholder="Address Line 1" name="">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <label for="pAddress2">Address Line 2</label>
+                        <input type="text" id="pAddress2" class="form-control form-control-lg" placeholder="Address Line 2" name="">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <label for="pPostalCode">Postal Code</label>
+                        <input type="text" id="pPostalCode" class="form-control form-control-lg" placeholder="Postal Code" name="">
+                    </div>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="city">City</label>
+                        <input type="text" id="city" class="form-control form-control-lg" placeholder="City" name="">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="pCountry">Country</label>
+                        <input type="text" id="pCountry" class="form-control form-control-lg" placeholder="Country" name="">
+                    </div>
+                </div>
+
+
+                <div class="my-4">
+                    <h4>Your Last Education Details:</h4>
+                </div>
+
+                <h5>Education Background</h5>
+                <div class="row mt-lg-4">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="qualification">Qualification</label>
+                        <input type="text" id="qualification" class="form-control form-control-lg" placeholder="Qualification" name="">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="passing_year">Passing year</label>
+                        <input type="date" id="passing_year" class="form-control form-control-lg" name="">
+                    </div>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="institute">Name of Institution</label>
+                        <input type="text" id="institute" class="form-control form-control-lg" placeholder="Institute Name" name="">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" class="form-control form-control-lg" placeholder="Location" name="">
+                    </div>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="grade">Grade / Percentage</label>
+                        <input type="text" id="grade" class="form-control form-control-lg" placeholder="Enter your Grade / Percentage" name="">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="study_gap">Do you have any study gap?</label>
+                        <select name="" id="study_gap" class="form-select form-select-lg">
+                            <option value="">Select Here</option>
+                            <option value="">Yes</option>
+                            <option value="">No</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="my-4">
+                    <h4>English Proficiency:</h4>
+                </div>
+
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-ielts-tab" data-bs-toggle="pill" data-bs-target="#pills-ielts" type="button" role="tab" aria-controls="pills-ielts" aria-selected="true">IELTS</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-toefl-tab" data-bs-toggle="pill" data-bs-target="#pills-toefl" type="button" role="tab" aria-controls="pills-toefl" aria-selected="false">TOEFL</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-pte-tab" data-bs-toggle="pill" data-bs-target="#pills-pte" type="button" role="tab" aria-controls="pills-pte" aria-selected="false">PTE</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-ielts" role="tabpanel" aria-labelledby="pills-ielts-tab" tabindex="0">
+
+                        <div class="row mt-lg-4">
+                            <div class="col-lg-12">
+                                <label for="overall_score">IELTS Overall Score</label>
+                                <input type="text" id="overall_score" class="form-control form-control-lg" placeholder="IELTS Overall Score" name="">
+                            </div>
+                        </div>
+                        <div class="row mt-lg-4">
+                            <div class="col-lg-6">
+                                <label for="reading_score">IELTS Reading</label>
+                                <input type="text" id="reading_score" class="form-control form-control-lg" placeholder="Reading Score" name="">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="writing_score">IELTS Writing</label>
+                                <input type="text" id="writing_score" class="form-control form-control-lg" placeholder="Writing Score" name="">
+                            </div>
+                        </div>
+                        <div class="row mt-lg-4">
+                            <div class="col-lg-6">
+                                <label for="listening_score">IELTS Listening</label>
+                                <input type="text" id="listening_score" class="form-control form-control-lg" placeholder="Listening Score" name="">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="speaking_score">IELTS Speaking</label>
+                                <input type="text" id="speaking_score" class="form-control form-control-lg" placeholder="Speaking Score" name="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-toefl" role="tabpanel" aria-labelledby="pills-toefl-tab" tabindex="0">
+                        <div class="row mt-lg-4">
+                            <div class="col-lg-6">
+                                <label for="toefl_score">TOEFL Score</label>
+                                <input type="text" id="toefl_score" class="form-control form-control-lg" placeholder="TOEFL Score" name="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-pte" role="tabpanel" aria-labelledby="pills-pte-tab" tabindex="0">
+                        <div class="row mt-lg-4">
+                            <div class="col-lg-6">
+                                <label for="pte_score">PTE Score</label>
+                                <input type="text" id="pte_score" class="form-control form-control-lg" placeholder="PTE Score" name="">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+
+                <div class="my-4">
+                    <h4>Preferred Study Information:</h4>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="apply_country">To which country you want to apply ?</label>
+                        <select name="" id="apply_country" class="form-select form-select-lg">
+                            <option value="">Select Country</option>
+                            <option value="">Australia</option>
+                            <option value="">UK</option>
+                            <option value="">USA</option>
+                            <option value="">Canada</option>
+                            <option value="">France</option>
+                            <option value="">New-zealand</option>
+                            <option value="">Malaysia</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="apply_course">Which course you want to do ?</label>
+                        <select name="" id="apply_course" class="form-select form-select-lg">
+                            <option value="">Select Course</option>
+                            <option value="">High Education</option>
+                            <option value="">Foundation</option>
+                            <option value="">Certificate</option>
+                            <option value="">Diploma</option>
+                            <option value="">Advance Diploma</option>
+                            <option value="">Bachelor</option>
+                            <option value="">Masters</option>
+                            <option value="">Others</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row mt-lg-4">
+                    <div class="col-lg-12">
+                        <label for="intake">What is your preferred Session/Intake ?</label>
+                        <select name="" id="intake" class="form-select form-select-lg">
+                            <option value="">Select Study Session</option>
+                            <option value="">January</option>
+                            <option value="">March</option>
+                            <option value="">May</option>
+                            <option value="">July</option>
+                            <option value="">September</option>
+                            <option value="">November</option>
+                        </select>
+                    </div> 
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-12">
+                        <label for="">In which major/subject do you want to apply? ( Copy & paste the subject link from institutions websites in the below boxes)</label>
+                        <input type="text" class="form-control form-control-lg mt-3" placeholder="Option 1 - Your preferred subject . . .">
+                        <input type="text" class="form-control form-control-lg mt-3" placeholder="Option 2 - Your preferred subject . . .">
+                        <input type="text" class="form-control form-control-lg mt-3" placeholder="Option 3 - Your preferred subject . . .">
+                    </div>
+                </div>
+                <div class="row mt-lg-4">
+                    <div class="col-lg-12">
+                        <label for="">Which institutions do you wish to apply for?</label>
+                        <input type="text" class="form-control form-control-lg mt-3" placeholder="Option 1 - Your preferred institution . . .">
+                        <input type="text" class="form-control form-control-lg mt-3" placeholder="Option 2 - Your preferred institution . . .">
+                        <input type="text" class="form-control form-control-lg mt-3" placeholder="Option 3 - Your preferred institution . . .">
+                    </div>
+                </div>
+
+                <div class="my-4">
+                    <h4>Others:</h4>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="visa_refuse">Is your visa been refused by any country ?</label>
+                        <select name="" id="visa_refuse" class="form-select form-select-lg">
+                            <option value="">Select Here</option>
+                            <option value="">Yes</option>
+                            <option value="">No</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="overseas">Do you have any previous overseas travel histroy ?</label>
+                        <select name="" id="overseas" class="form-select form-select-lg">
+                            <option value="">Select Here</option>
+                            <option value="">Yes</option>
+                            <option value="">No</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row mt-lg-4">
+                    <div class="col-lg-12">
+                        <label for="criminal">Do you have any criminal
+                        records ?</label>
+                        <select name="" id="criminal" class="form-select form-select-lg">
+                            <option value="">Select Here</option>
+                            <option value="">Yes</option>
+                            <option value="">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="work_expre">Do you have any full time or part time work experience ?</label>
+                        <select name="" id="work_expre" class="form-select form-select-lg">
+                            <option value="">Select Here</option>
+                            <option value="">Yes</option>
+                            <option value="">No</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="spouse">Will your spouse or any dependent accompany you ?</label>
+                        <select name="" id="spouse" class="form-select form-select-lg">
+                            <option value="">Select Here</option>
+                            <option value="">Yes</option>
+                            <option value="">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="finance">Who will finance your study and living expenses in abroad ?</label>
+                        <input type="text" id="finance" class="form-control form-control-lg" placeholder="Who will finance your study and living expenses in abroad">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="prominant">How do you know about Prominent Consultant ?</label>
+                        <input type="text" id="prominant" class="form-control form-control-lg" placeholder="How do you know about Prominent Consultant">
+                    </div>
+                </div>
+
+
+                <div class="my-4">
+                    <h4>File Attachment:</h4>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="">CV/Resume : (DOCS or PDF format , Size Maximum 4 MB)</label>
+                        <input type="file" id="" class="form-control form-control-lg" placeholder="Who will finance your study and living expenses in abroad">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="">Passport copy :(Scaned Copy)</label>
+                        <input type="file" id="" class="form-control form-control-lg" placeholder="How do you know about Prominent Consultant">
+                    </div>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="">IELTS/ English proficiency result : (Scaned Copy)</label>
+                        <input type="file" id="" class="form-control form-control-lg" placeholder="Who will finance your study and living expenses in abroad">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="">All academic documents in a single PDF ( Size Maximum 4 MB):</label>
+                        <input type="file" id="" class="form-control form-control-lg" placeholder="How do you know about Prominent Consultant">
+                    </div>
+                </div>
+
+                <div class="row mt-lg-4">
+                    <div class="col-lg-12">
+                        <label for="">Other documents ( in a single PDF file, for example, Letter of Intent / SOP, Letter of Recommendation, Job experience letter, or any other) ( Size Maximum 4 MB):</label>
+                        <input type="file" id="" class="form-control form-control-lg" placeholder="Who will finance your study and living expenses in abroad">
+                    </div>
+                </div>
+
+                <div class="text-end mt-4">
+                    <button type="submit" class="btn btn-lg">Application Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+<!-- Main Section -->
+
+
+
+
+<!-- Footer -->
+<section id="footer">
+    <div class="container">
+        <div id="footer_first">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <h2 class="mb-0">Newsletter Signup</h2>
+                </div>
+                <div class="col-lg-8">
+                    <div class="input-group">
+                        <input type="text" class="form-control form-control-lg" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-lg btn-outline-light" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+     <div class="container">
+        <div class="row">
+            <div class="col-lg-3" id="footer_about_us">
+                <img src="../public/image/white-logo.png" class="mb-4" alt="">
+                <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reiciendis enim, porro iusto delectus itaque tempora. Impedit, temporibus! consectetur adipisicing elit.</p>
+
+                <a class="btn btn-light" href="./about.html">Read More</a>
+            </div>
+            <div class="col-lg-3" id="footer_quick_link">
+                <h4>Quick Link</h4>
+                <ul>
+                    <li><a href="./team.html">Team</a></li>
+                    <li><a href="./upcoming-event.html">Events</a></li>
+                    <li><a href="./testimonial.html">Testimonials</a></li>
+                    <li><a href="./news.html">News</a></li>
+                    <li><a href="./privaccy-policy.html">Privacy Policy</a></li>
+                    <li><a href="./terms-and-condition.html">Terms & Conditions</a></li>
+                    <li><a href="./contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3" id="footer_countries">
+                <h4>Countries</h4>
+                <ul>
+                   <li><a href="./study-destination/uk.html">UK</a></li> 
+                   <li><a href="./study-destination/usa.html">USA</a></li> 
+                   <li><a href="./study-destination/australia.html">Australia</a></li> 
+                   <li><a href="./study-destination/canada.html">Canada</a></li>
+                   <li><a href="./study-destination/france.html">France</a></li> 
+                   <li><a href="./study-destination/malaysia.html">Malaysia</a></li>
+                   <li><a href="./study-destination/new-zealand.html">New Zealand</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3" id="footer_social_media">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+6128872265</span>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>+6128872265</span>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>example@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Suite 207A/30 Campbell St, Blacktown NSW 2148</span>
+                    </li>
+                </ul>
+
+                <h4 class="mt-4">Follow Us At</h4>
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+     </div>
+    </section>
+    <div id="copyright">
+       <p class="mb-0 text-center">copyright <span id="copyright_year"></span> © JNS Study Abroad | All rights reserved.</p>
+    </div>
+<!-- Footer -->
+
+<script src="./app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
