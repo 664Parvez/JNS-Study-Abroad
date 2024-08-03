@@ -111,7 +111,6 @@ body {
     font-size: 22px;
     font-weight: bold;
     color: #fff;
-    background-color: var(--red-color);
 }
 #hero .swiper-slide img {
     display: block;
@@ -630,6 +629,19 @@ body {
 }
 #ts_email {
     color: var(--second-color);
+}
+
+
+/* Our Partner */
+#partner_bredcrumb {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../image/testimonial/bradcrumb.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#partner_bredcrumb h1 {
+    color: var(--white-color);
 }
 
 
