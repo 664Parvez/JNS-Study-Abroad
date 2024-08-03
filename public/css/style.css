@@ -301,7 +301,7 @@ body {
         font-size: 14px;
     }
     #home_two h2 {
-        font-size: 35px;
+        font-size: 30px;
     }
     #home_two p {
         font-size: 16px;
@@ -317,6 +317,14 @@ body {
     #home_five h2 {
         font-size: 25px;
     }
+    #home_five .mySwiperFive .d-flex {
+        display: block !important;
+    }
+    #home_five .mySwiperFive img {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 20px;
+    }
     
     #home_six h2 {
         font-size: 25px;
@@ -331,6 +339,19 @@ body {
     }
     #home_eight .get_quote_form {
         margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    #hero .swiper h1 {
+        font-size: 20px;
+        color: var(--first-color);
+    }
+    #hero .swiper p {
+        font-size: 14px;
+    }
+    #home_two h2 {
+        font-size: 35px;
     }
 }
 
@@ -554,6 +575,62 @@ body {
 }
 
 /* testimonial Single */
+#testimonial_single_section {
+    padding: 40px 0;
+}
+#testimonial_single_section img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+#ts_intake {
+    color: var(--second-color);
+}
+
+/* Alumni */
+#alumni_bredcrumb {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../image/testimonial/bradcrumb.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#alumni_bredcrumb h1 {
+    color: var(--white-color);
+}
+#alumni_section {
+    padding: 40px 0;
+}
+#alumni_section .card img {
+    width: 100%;
+}
+#alumni_section .card-body a i {
+    font-size: 40px;
+    color: var(--first-color);
+}
+#alumni_section .testimonial_student_img {
+    height: 120px !important;
+    width: 120px !important;
+    margin-top: -50px;
+    border-radius: 50%;
+    border: 3px solid var(--second-color);
+}
+#alum_email {
+    color: var(--second-color);
+}
+
+/* Alumni Single */
+#alumni_single_section {
+    padding: 40px 0;
+}
+#alumni_single_section img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+#ts_email {
+    color: var(--second-color);
+}
 
 
 /* Contact Us */
@@ -880,5 +957,10 @@ body {
     }
     #footer #footer_social_media {
         margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    #side_button {
+        display: none;
     }
 }
