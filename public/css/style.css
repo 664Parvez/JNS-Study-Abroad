@@ -749,6 +749,47 @@ body {
     color: var(--second-color);
 }
 
+#event_section {
+    padding: 40px 0;
+}
+#event_search {
+    background-color: var(--first-color);
+    padding: 50px 0;
+}
+#event_search label {
+    color: var(--white-color);
+}
+#event_section h3 {
+    color: var(--white-color);
+    font-weight: 600;
+}
+#event_section .card-img {
+    height: 200px;
+    overflow: hidden;
+}
+#event_section h4 {
+    font-weight: 600;
+    color: var(--second-color);
+}
+#event_section input {
+    margin-top: 10px;
+}
+#event_form {
+    background-color: var(--second-color);
+    padding: 15px;
+    border-radius: 10px;
+}
+#event_form h2 {
+    color: var(--white-color);
+}
+#event_form p {
+    color: var(--white-color);
+}
+#event_form .btn {
+    background-color: var(--white-color);
+}
+
+
 /* Application */
 #application_bredcrumb {
     padding: 80px 0;
@@ -998,4 +1039,17 @@ body {
     #side_button {
         display: none;
     }
+}
+
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    z-index: 999;
+    background-color: var(--second-color);
+}
+#btn-back-to-top i {
+    color: var(--white-color);
 }
