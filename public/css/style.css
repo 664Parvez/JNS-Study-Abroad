@@ -285,7 +285,7 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     #hero .swiper{
-        height: 100vh;
+        height: 80vh;
     }
     #hero .swiper .mobile_text_bg {
         background:  rgba(255, 255, 255, 0.5);
