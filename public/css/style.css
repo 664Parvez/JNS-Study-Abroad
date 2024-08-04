@@ -644,7 +644,7 @@ body {
     color: var(--white-color);
 }
 #partners {
-    padding: 40px 0;
+    padding-bottom: 40px;
 }
 #partners .btn {
     background-color: var(--second-color);
@@ -658,6 +658,13 @@ body {
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
+}
+#partners .partner_country_name {
+    padding: 10px;
+    background-color: var(--second-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    margin-top: 40px;
 }
 
 
