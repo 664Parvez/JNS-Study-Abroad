@@ -496,6 +496,25 @@ body {
     width: 100%;
 }
 
+/* Gallery */
+#gallery_bredcrumb {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../image/about/bradcrump.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#gallery_bredcrumb h1 {
+    color: var(--white-color);
+}
+#gallery_section {
+    padding: 40px 0;
+}
+#gallery_section img {
+    width: 100%;
+    height: auto;
+}
+
 
 /* Chooose Us */
 #choose_bredcrumb {
