@@ -791,6 +791,28 @@ body {
     background-color: var(--white-color);
 }
 
+/* Team */
+#team_bredcrumb {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../image/contactus.webp");
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#team_bredcrumb h1 {
+    color: var(--white-color);
+}
+#team_section {
+    padding: 40px 0;
+}
+#team_section h4 {
+    font-weight: 600;
+    color: var(--first-color);
+}
+#team_section p {
+    color: var(--second-color);
+}
+
 
 /* Application */
 #application_bredcrumb {
