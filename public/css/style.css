@@ -82,7 +82,7 @@ body {
     width: auto;
 }
 #destination_items {
-    width: 250px;
+    width: 300px;
     height: 400px;
     overflow: scroll;
 }
@@ -381,12 +381,36 @@ body {
     color: var(--second-color);
 }
 
+/* Nordic Countries */
+#nordic_countries_flag {
+    padding: 30px 0;
+}
+#nordic_countries_flag img {
+    height: auto;
+    width: 80px;
+}
+
+/* Schengen Countries */
+#schengen_countries_flag {
+    padding: 30px 0;
+}
+#schengen_countries_flag img {
+    height: auto;
+    width: 80px;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     #country_section img {
         margin-top: 20px;
     }
     #country_section h2 {
         font-size: 23px;
+    }
+    #nordic_countries_flag img {
+        width: 60px;
+    }
+    #schengen_countries_flag img {
+        width: 60px;
     }
 }
 
