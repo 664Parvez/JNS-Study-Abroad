@@ -415,6 +415,17 @@ body {
 }
 
 
+/* Success Story */
+#success_story_page {
+    padding: 40px 0;
+}
+#success_story_page img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
 /* Side social Media */
 #side_social_media_icon {
     position: fixed;
